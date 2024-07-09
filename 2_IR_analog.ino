@@ -1,27 +1,18 @@
-// Define the pins for each IR sensor
-const int irSensorLPin = A1;  // Analog pin for sensor 1
-const int irSensorRPin = A0;  // Analog pin for sensor 2
-
-// Variables to store sensor readings
-int sensorLValue = 0;
-int sensorRValue = 0;
+const int sensorPinR = A0; // Analog input pin for right sensor
+const int sensorPinL = A1; // Analog input pin for left sensor
 
 void setup() {
-  // Initialize serial communication
-  Serial.begin(9600);
+  Serial.begin(9600); // Initialize serial communication
 }
 
 void loop() {
-  // Read sensor values
-  sensorLValue = analogRead(irSensorLPin);
-  sensorRValue = analogRead(irSensorRPin);
+  int sensorValue1 = analogRead(sensorPinR); // Read sensor 1
+  int sensorValue2 = analogRead(sensorPinL); // Read sensor 2
 
-  // Print sensor values to serial monitor
-  Serial.print("Sensor L: ");
-  Serial.print(sensorLValue);
-  Serial.print("\tSensor R: ");
-  Serial.println(sensorRValue);
+  Serial.print("Sensor R: ");
+  Serial.print(sensorValue1); // Print R sensor value
+  Serial.print("\tSensor L: ");
+  Serial.println(sensorValue2); // Print L sensor value
 
-  // Optional delay for readability (adjust as needed)
-  delay(100); 
+  delay(100); // Delay between readings
 }
