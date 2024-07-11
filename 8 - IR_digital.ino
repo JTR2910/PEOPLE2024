@@ -1,8 +1,8 @@
-const int irSensor1Pin = 2;  // Digital pin for sensor 1
-const int irSensor2Pin = 3;  // Digital pin for sensor 2
-const int irSensor3Pin = 4;  // Digital pin for sensor 3
-const int irSensor4Pin = 5;  // Digital pin for sensor 4
-const int irSensor5Pin = 6;  // Digital pin for sensor 5
+const int irSensor1Pin = a;  // Digital pin for sensor 1
+const int irSensor2Pin = b;  // Digital pin for sensor 2
+const int irSensor3Pin = c;  // Digital pin for sensor 3
+const int irSensor4Pin = d;  // Digital pin for sensor 4
+const int irSensor5Pin = e;  // Digital pin for sensor 5
 
 //test for different files
 
