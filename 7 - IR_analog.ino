@@ -1,5 +1,5 @@
-const int sensorPinR = A0; // Analog input pin for right sensor
-const int sensorPinL = A1; // Analog input pin for left sensor
+const int sensorPinR = Ax; // Analog input pin for right sensor
+const int sensorPinL = Ay; // Analog input pin for left sensor
 
 void setup() {
   Serial.begin(9600); // Initialize serial communication
