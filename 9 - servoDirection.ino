@@ -3,8 +3,8 @@
 Servo myServoR;  // Create a Servo object to control the servo motor
 Servo myServoL; 
 
-int servoPinR = 10;  // right servo
-int servoPinL = 9;   // Left servo 
+int servoPinR = x;  // right servo
+int servoPinL = y;   // Left servo 
 
 
 void setup(){
@@ -15,13 +15,13 @@ void setup(){
 
 
 void loop(){
-  myServoR.writeMicroseconds(1200);  // Set the servo to 1200 microseconds
-  myServoL.writeMicroseconds(1800); 
+  myServoR.writeMicroseconds(a);  // Set the servo PWM signal, range is between
+  myServoL.writeMicroseconds(b);  // 1200 - 1800. 
   Serial.println("Forward"); 
   delay(2000);  // Wait for 1 second
   
-  myServoR.writeMicroseconds(1800);  // Set the servo to 1200 microseconds
-  myServoL.writeMicroseconds(1200); 
+  myServoR.writeMicroseconds(b);  // Set the servo to 1200 microseconds
+  myServoL.writeMicroseconds(a); 
   Serial.println("Backward"); 
   delay(2000);  // Wait for 1 second
   // You can add additional actions or conditions here if needed
