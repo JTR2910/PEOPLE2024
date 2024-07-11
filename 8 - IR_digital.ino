@@ -4,6 +4,9 @@ const int irSensor3Pin = 4;  // Digital pin for sensor 3
 const int irSensor4Pin = 5;  // Digital pin for sensor 4
 const int irSensor5Pin = 6;  // Digital pin for sensor 5
 
+//test for different files
+
+
 // Variables to store sensor readings
 int sensor1State = 0;
 int sensor2State = 0;
